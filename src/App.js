@@ -1,11 +1,11 @@
 import React from 'react';
 import Header from "./components/header/Header";
+import Post from './components/post/Post';
 import PostCard from "./components/postCard/PostCard";
 
 class App extends React.Component{
     constructor(props) {
         super(props);
-
         this.state = {
             posts:[]
         }
@@ -29,8 +29,9 @@ class App extends React.Component{
         return (
             <>
                 <Header/>
+                <Post/>
                 {
-                    this.state.posts.map( item => <PostCard data={item} /> )
+                    this.state.posts.map( item => <PostCard data={item} key={item.id}/> )
                 }
             </>
         );
