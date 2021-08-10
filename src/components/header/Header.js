@@ -7,7 +7,7 @@ class Header extends React.Component{
             <div className="header">
                 <a href="\home" className="logo">HABR</a>
                 <div className="header-right">
-                    <a className="active" href="\home">Все</a>
+                    <a className="active" href="\All">Все</a>
                     <a href="\news">Новости</a>
                     <a href="\articles">Статьи</a>
                 </div>

@@ -1,6 +1,6 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import Header from "./components/header/Header";
-import Post from './components/post/Post';
 import PostCard from "./components/postCard/PostCard";
 
 class App extends React.Component{
@@ -27,13 +27,12 @@ class App extends React.Component{
 
     render(){
         return (
-            <>
+            <BrowserRouter>
                 <Header/>
-                <Post/>
-                {
+                {                     
                     this.state.posts.map( item => <PostCard data={item} key={item.id}/> )
-                }
-            </>
+                }                    
+            </BrowserRouter>
         );
     }
 }
