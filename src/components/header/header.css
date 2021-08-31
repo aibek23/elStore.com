@@ -1,47 +1,408 @@
 .header {
-    overflow: hidden;
-    background-color: rgb(252, 252, 252);
-    padding: 20px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: .2s linear;
+    padding-bottom: 20px;
+    z-index: 50;
+    background-color: red;
+    max-height: 229px;
 }
 
-.header a {
-    float: left;
-    color: black;
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
+.header_active {
+    background: #0E1D28;
+}
+
+.header__wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-top: 30px;
+    max-width: 1280px;
+}
+
+.header__nav {
+    padding-left: 40px;
+}
+
+.header__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 65px;
+}
+
+.header_entrance {
+    margin-right: 0;
+}
+
+
+
+.header_entrance__btn {
+    height: 43px;
+    width: 77px;
+    font-size: 16px;
+    font-weight: 900;
+    font-family: "Franklin Gothic Demi Cond";
+    background-color: #fff;
+    border-radius: 15px;
+
+}
+
+.header__item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 82px;
+}
+
+.header__item:last-child {
+    margin-right: 0;
+}
+
+.header__item img {
+    height: 32px;
+    fill: black;
+}
+
+
+
+.header__link {
     font-size: 18px;
-    line-height: 25px;
-    border-radius: 4px;
-}
-
-.header a.logo {
-    font-size: 25px;
     font-weight: bold;
-}
-
-.header a:hover {
-    background-color: #ddd;
+    line-height: 2;
+    font-family: "Franklin Gothic Demi Cond";
+    text-transform: uppercase;
     color: black;
+    text-decoration: none;
 }
 
-.header a.active {
-    background-color: dodgerblue;
-    color: white;
+
+.submenu {
+    border: 2px solid rgb(80, 128, 253);
+    border-radius: 5px;
+    position: absolute;
+    z-index: 2;
+    width: 250px;
+    transform: translateY(110px);
+    background-color: #fff;
+    display: none;
 }
 
-.header-right {
-    float: right;
+
+.header__item:hover>.submenu {
+    display: inline;
+}
+
+.submenu::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-20px);
+    border: 20px solid transparent;
+    border-bottom: 20px solid rgb(80, 128, 253);
+}
+
+.submenu__item {
+    max-height: 330px;
+    overflow-y: scroll;
+}
+
+
+
+.submenu__item li {
+    padding: 20px 10px;
+    border-bottom: 2px solid #E8E8E8;
+}
+
+.submenu__item a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 18px;
+    font-family: "Franklin Gothic Book";
+
+}
+
+.submenu__item::-webkit-scrollbar {
+    width: 17px;
+    background-color: #F1F1F1;
+}
+
+.submenu__item::-webkit-scrollbar-thumb {
+    background-color: #CDCDCD;
+}
+
+.header__burger {
+    display: none;
+    width: 40px;
+    height: 28px;
+    position: relative;
+}
+
+.burger__line {
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+}
+
+.burger__line_btn {
+    justify-content: flex-end;
+    height: 43px;
+    width: 77px;
+}
+
+.burger__line_second {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.burger__line_third {
+    bottom: 0;
+}
+
+.saerch {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+}
+
+.saerch__form {
+    width: 100%;
+    max-width: 980px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.saerch__btn {
+    width: 37px;
+    height: 30px;
+    margin-right: 25px;
+    border: none;
+    background: none;
+    padding: 0;
+    position: relative;
+
+}
+
+.saerch__line {
+    display: block;
+
+    border-radius: 5px;
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+}
+
+.saerch__form span {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 5px;
+    font-family: "Franklin Gothic Demi Cond";
+    text-transform: uppercase;
+    color: black;
+
+    margin-right: 22px;
+}
+
+
+
+.saerch__line::after,
+.saerch__line::before {
+    display: block;
+    content: "";
+    border-radius: 5px;
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+}
+
+.saerch__line::after {
+    top: 0;
+}
+
+.saerch__line::before {
+    bottom: 0;
+}
+
+.search__input__wrrap {
+    width: 100%;
+    border-radius: 40px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #fff;
+
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search__input__btn {
+    height: 40px;
+    width: 40px;
+    background-color: rgb(192, 192, 192);
+    background-image: url(../../img/svg/search-solid.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+
+}
+
+.search__input__wrrap input {
+    border: none;
+    background: none;
+    width: calc(100% - 40px);
+    height: 100%;
+    max-width: 807px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 5px;
+    font-family: "Franklin Gothic Demi Cond";
+    text-transform: uppercase;
+    color: black;
+
+
+}
+
+
+@media screen and (max-width: 960px) {
+    .section-title {
+        margin-bottom: 25px;
+    }
+
+    .section-title::after {
+        width: 78px;
+    }
+
+    .header__burger {
+        display: block;
+    }
+
+    .header__wrapper {
+        padding-top: 28px;
+    }
+
+    .header__nav {
+        max-width: 100%;
+        height: 100%;
+        position: fixed;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        top: 0;
+        left: 0;
+        background-color: #000000c9;
+        z-index: 10;
+        padding: 65px 10px;
+        transform: translateX(-100%);
+        transition: .2s all linear;
+    }
+
+    .header__nav_active {
+        transform: translateX(0);
+    }
+
+    .header__item {
+        flex-direction: row;
+        position: relative;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .header__item img {
+        margin-right: 10px;
+    }
+
+    .header__item:last-child {
+        margin-bottom: 0;
+    }
+
+    .submenu {
+        border: 2px solid rgb(80, 128, 253);
+        border-radius: 5px;
+        width: 100%;
+        /* transform: translateY(110px); */
+        background-color: #fff;
+        opacity: 0;
+        transition: 2s;
+    }
+
+    .header__link:hover {
+        opacity: 1;
+
+    }
+
+
+    .submenu::after {
+        display: none;
+    }
+
+    .header__link {
+        color: white;
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .header__nav-close {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 10;
+    }
+
+    .header__nav-close-line {
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+    }
+
+    .header__nav-close-line:first-child {
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    .header__nav-close-line:last-child {
+        transform: translateY(-50%) rotate(-45deg);
+    }
+
+    .saerch__form input {
+        border-radius: 25px;
+        width: 100%;
+        height: 25px;
+    }
+
+    .saerch__form {
+        max-width: 600px;
+        margin-bottom: 30px;
+    }
+
+    .saerch__form span {
+        display: none;
+    }
+
+    .saerch__btn {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 500px) {
-    .header a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-
-    .header-right {
-        float: none;
+    .header__nav {
+        padding: 75px 30px;
     }
 }

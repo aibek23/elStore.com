@@ -1,37 +1,16 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
-import Header from "./components/header/Header";
-import PostCard from "./components/postCard/PostCard";
+import { BrowserRouter, Route } from 'react-router-dom';
+import Header from './components/header/Header';
+import Asiamol from './pages/asiamol/Asiamol';
 
 class App extends React.Component{
-    constructor(props) {
-        super(props);
-        this.state = {
-            posts:[]
-        }
-    }
-
-    componentDidMount() {
-        fetch('http://localhost:3001/posts')
-            .then(response => {
-                if(response.ok){
-                    return response.json();
-                } else {
-                    alert('Произошла ошибка. Статус ошибки: '+response.status);
-                }
-            })
-            .then(data => this.setState({
-                posts:data
-            }))
-    }
-
     render(){
         return (
             <BrowserRouter>
                 <Header/>
-                {                     
-                    this.state.posts.map( item => <PostCard data={item} key={item.id}/> )
-                }                    
+                    
+                     <Route  path="/Asiamol"  component={Asiamol}/>
+                            
             </BrowserRouter>
         );
     }
