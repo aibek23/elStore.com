@@ -1,0 +1,113 @@
+.conrainer {
+    max-width: 1280px;
+    display: grid;
+    /* grid-gap: 70px; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    overflow-x: auto;
+
+}
+
+.grid__3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+
+}
+
+.shop__card {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    width: 226px;
+    height: 380px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.shop__card a {
+    text-decoration: none;
+    color: black;
+}
+
+.shop__card__svg {
+    position: absolute;
+    transform: translate(-18px, -12px);
+}
+
+.boutique__img {
+    box-sizing: border-box;
+    width: 226px;
+    height: 280px;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.363);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.shop__card:hover .boutique__img {
+    border: 1px solid rgba(0, 0, 255, 0.932);
+}
+
+.shop__card:hover a {
+    color: blue;
+}
+
+.pluse__btn {
+    padding-top: 60px;
+    margin: 60px 0 65px 0;
+    text-align: center;
+}
+
+/* {
+    font-size: 18px;
+    font-family: "Franklin Gothic Demi Cond";
+    color: rgb( 80, 128, 253 );
+    line-height: 2.667;
+    text-align: right;
+    position: absolute;
+    left: 412px;
+    top: 1405px;
+    width: 138px;
+    height: 15px;
+    z-index: 44;
+  } */
+@media (max-width: 960px) {
+    .conrainer {
+        /* grid-gap: 70px; */
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .conrainer {
+
+        /* grid-gap: 70px; */
+        grid-template-columns: 1fr 1fr;
+        justify-items: center
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .conrainer {
+        display: grid;
+        grid-gap: 70px;
+        grid-template-columns: 1fr;
+        justify-items: center
+    }
+
+    .shop__card {
+        margin-top: 50px;
+
+        width: 100%;
+        height: 100%;
+
+        max-width: 300px;
+    }
+
+    .boutique__img {
+        width: 100%;
+        height: 100%;
+    }
+}
