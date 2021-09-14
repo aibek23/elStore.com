@@ -18,25 +18,25 @@ class AsiaMall extends React.Component{
                                 <div className={style.shop__card__svg}><img src={share} alt="" /></div>
                                 <img className={style.boutique__img} src="https://mgorod.kz/wp-content/uploads/2016/04/5-DIVERSE.jpg" alt="" />
                                 <p className="description" style={{opacity:".4",marginBottom:"30px"}}>Penti / Магазин нижнего белья</p>                               
-                                <a href="">Азия Мол 3 эт. Бутик №7</a>
+                                <a href="//">Азия Мол 3 эт. Бутик №7</a>
                             </div>
                             <div className={style.shop__card}>
                                 <div className={style.shop__card__svg}><img src={share} alt="" /></div>
                                 <img className={style.boutique__img} src="https://mgorod.kz/wp-content/uploads/2016/04/5-DIVERSE.jpg" alt="" />
                                 <p className="description" style={{opacity:".4",marginBottom:"30px"}}>Penti / Магазин нижнего белья</p>                               
-                                <a href="">Азия Мол 3 эт. Бутик №7</a>
+                                <a href="//">Азия Мол 3 эт. Бутик №18</a>
                             </div>
                             <div className={style.shop__card}>
                                 <div className={style.shop__card__svg}><img src={share} alt="" /></div>
                                 <img className={style.boutique__img} src="https://mgorod.kz/wp-content/uploads/2016/04/5-DIVERSE.jpg" alt="" />
                                 <p className="description" style={{opacity:".4",marginBottom:"30px"}}>Penti / Магазин нижнего белья</p>                               
-                                <a href="">Азия Мол 3 эт. Бутик №7</a>
+                                <a href="//">Азия Мол 1 эт. Бутик №11</a>
                             </div>
                             <div className={style.shop__card}>
                                 <div className={style.shop__card__svg}><img src={share} alt="" /></div>
                                 <img className={style.boutique__img} src="https://files.oldi.ru/export/0000000031/0627092_02.JPG" alt="" />
                                 <p className="description" style={{opacity:".4",marginBottom:"30px"}}>Penti / Магазин нижнего белья</p>                               
-                                <a href="">Азия Мол 3 эт. Бутик №7</a>
+                                <a href="//">Азия Мол 2 эт. Бутик №28</a>
                             </div>
                         </div>
                     </div>

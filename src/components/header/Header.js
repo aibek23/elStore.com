@@ -77,18 +77,10 @@ class Header extends React.Component {
                                         <ul className="submenu__item">
                                              <li><Link to="/shoppingСenter/dordoiPlaza" className="submenu__link">Дордой плаза </Link></li>
                                             <li><Link to="/shoppingСenter/asia-Moll" className="submenu__link">АЗИЯ-МОЛ</Link></li>
-                                            <li><Link  className="submenu__link">АЙ-МОЛ</Link></li>
-                                             <li><Link className="submenu__link">БЕТА-СТОРЕС 1</Link></li>
-                                            <li><Link  className="submenu__link">БЕТА-СТОРЕС 2</Link></li>
-                                            <li><Link className="submenu__link">ДОРДОЙ</Link></li>
-                                            <li><Link  className="submenu__link">БЕТА-СТОРЕС 1</Link></li>
-                                            {/*
-                                            <li><Link href="" className="submenu__link">БЕТА-СТОРЕС 2</Link></li>
-                                            <li><Link href="" className="submenu__link">ДОРДОЙ</Link></li>
-                                            <li><Link href="" className="submenu__link">ДОРДОЙ</Link></li>
-                                            <li><Link href="" className="submenu__link">БЕТА-СТОРЕС 1</Link></li>
-                                            <li><Link href="" className="submenu__link">БЕТА-СТОРЕС 2</Link></li>
-                                            <li><Link href="" className="submenu__link">ДОРДОЙ</Link></li>  */}
+                                            <li><Link to="/shoppingСenter/asia-Moll" className="submenu__link">АЙ-МОЛ</Link></li>
+                                             <li><Link to="/shoppingСenter/asia-Moll" className="submenu__link">БЕТА-СТОРЕС 1</Link></li>
+                                            <li><Link to="/shoppingСenter/asia-Moll" className="submenu__link">БЕТА-СТОРЕС 2</Link></li>
+                                            <li><Link to="/shoppingСenter/asia-Moll" className="submenu__link">ДОРДОЙ</Link></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -97,32 +89,52 @@ class Header extends React.Component {
                                         <img src={shop} alt="" />
                                     </div>МАГАЗИНЫ</NavLink> 
                                     <div className="submenu">
-                                        <ul className="submenu__item">            
-                                            <li><Link to="/shop/?" className="submenu__link">БЕТА-СТОРЕС 2</Link></li>
-                                            <li><a href="" className="submenu__link">ДОРДОЙ</a></li>
-                                            <li><a href="" className="submenu__link">ДОРДОЙ</a></li>
-                                            <li><a href="" className="submenu__link">БЕТА-СТОРЕС 1</a></li>
-                                            <li><a href="" className="submenu__link">БЕТА-СТОРЕС 2</a></li>
-                                            <li><a href="" className="submenu__link">ДОРДОЙ</a></li> 
+                                        <ul className="submenu__item">  
+
+
+                                        <li><Link to="/shoppingСenter/dordoiPlaza" className="submenu__link">Leadershop</Link></li>
+                                            <li><Link to="/shoppingСenter/asia-Moll" className="submenu__link">Two Girls Lingerie</Link></li>
+                                            <li><Link to="/shoppingСenter/asia-Moll" className="submenu__link">Center Costumes</Link></li>
+                                             <li><Link to="/shoppingСenter/asia-Moll" className="submenu__link">Fabishop</Link></li>
+                                             <li><Link to="/shoppingСenter/dordoiPlaza" className="submenu__link">Lion</Link></li>
+                                             <li><Link to="/shoppingСenter/dordoiPlaza" className="submenu__link">Wildberries.kg</Link></li>
+
                                         </ul>
                                     </div>
                                 </li>
 
                                 <li className="header__item">
-                                    <img src={furniture} alt="" />
-                                    <a href="videos" className="header__link ">МЕБЕЛЬ</a>
+                                <NavLink to={"/furniture"} className="header__link" >
+                                    <div className="header__item__img">
+                                        <img src={furniture} alt="" />
+                                    </div>
+                                    МЕБЕЛЬ
+                                    </NavLink> 
                                     <div className="submenu">
                                         <ul className="submenu__item">
-
+                                        <li><Link to="/shoppingСenter/dordoiPlaza" className="submenu__link"> Гранд Стиль Комфорт</Link></li>
+                                            <li><Link to="/shoppingСenter/asia-Moll" className="submenu__link">Turatbekoff</Link></li>
+                                            <li><Link to="/shoppingСenter/asia-Moll" className="submenu__link">Lina</Link></li>
+                                             <li><Link to="/shoppingСenter/asia-Moll" className="submenu__link">Micasa</Link></li>
+                                            <li><Link to="/shoppingСenter/asia-Moll" className="submenu__link">NOVAMEBEL</Link></li>
+                                            <li><Link to="/shoppingСenter/asia-Moll" className="submenu__link">Азбука Дома</Link></li>
+                                            <li><Link to="/shoppingСenter/asia-Moll" className="submenu__link">Helga</Link></li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li className="header__item">
-                                    <img src={supermarket} alt="" />
-                                    <a href="sign-in" className="header__link ">СУПЕРМАРКЕТЫ</a>
+                                <NavLink to={"/supermarket"} className="header__link" ><div className="header__item__img">
+                                    <img src={supermarket} alt="" /></div>
+                                    СУПЕРМАРКЕТЫ
+                                    </NavLink> 
                                     <div className="submenu">
                                         <ul className="submenu__item">
-
+                                        <li><Link to="/shoppingСenter/dordoiPlaza" className="submenu__link">Фрунзе</Link></li>
+                                            <li><Link to="/shoppingСenter/asia-Moll" className="submenu__link">Аманат Роуд</Link></li>
+                                            <li><Link to="/shoppingСenter/asia-Moll" className="submenu__link">GLOBUS</Link></li>
+                                             <li><Link to="/shoppingСenter/asia-Moll" className="submenu__link">Helga</Link></li>
+                                             <li><Link to="/shoppingСenter/dordoiPlaza" className="submenu__link">777 </Link></li>
+                                             <li><Link to="/shoppingСenter/dordoiPlaza" className="submenu__link"> </Link></li>
                                         </ul>
                                     </div>
                                 </li>

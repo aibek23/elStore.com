@@ -4,8 +4,6 @@
     /* grid-gap: 70px; */
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
-    overflow-x: auto;
-
 }
 
 .grid__3 {

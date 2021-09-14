@@ -27,7 +27,7 @@ class UserLogin extends React.Component {
                        <input type="password" className={stalie.form__user__input}/>
                        <span style={{position:'absolute',right:'10px'}}><FontAwesomeIcon icon={faEye} /></span></div> 
                     <button>Войти</button>
-                    <a style={{textDecoration:"none",textAlign:"center",color:"black",fontSize:"18px"}} href="">Забыли пароль?</a>
+                    <a style={{textDecoration:"none",textAlign:"center",color:"black",fontSize:"18px"}} href="//">Забыли пароль?</a>
                 </form>
 
             </>

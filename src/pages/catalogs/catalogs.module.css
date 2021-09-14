@@ -64,6 +64,7 @@
 
 .filter__menu {
     color: brown;
+    letter-spacing: 0.1em;
 }
 
 .filter__menu._active {

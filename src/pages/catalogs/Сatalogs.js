@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './catalogs.module.css';
-import {Route,Link} from 'react-router-dom';
-import Children from './children/Children'
+import {Link} from 'react-router-dom';
+// import Children from './children/Children'
 
 class Catalogs extends React.Component {
     constructor(props) {
@@ -21,7 +21,7 @@ class Catalogs extends React.Component {
                 <div className="main">
                         <div className={style.conrainer}>
                             <div className={style.shop__card}>
-                            <Link to='/catalog/woman'>
+                            <Link to='/catalog/women'>
                                 <p className={style.shop__card__title}>женщинам</p>
                                 <img className={style.card__img} src="https://femmie.ru/wp-content/uploads/2018/03/shutterstock_533428837.jpg" alt="" />
                                 </Link>
@@ -45,7 +45,7 @@ class Catalogs extends React.Component {
                                 </Link>
                             </div>
                             <div className={style.shop__card}>
-                                <Link to='/catalog/products'>
+                                <Link to='/catalog/product'>
                                 <p className={style.shop__card__title}>продукты</p>
                                 <img className={style.card__img} src="https://medknsltant.com/wp-content/uploads/2018/04/produkty-na-diete-maggi.jpg" alt="" />
                                 </Link>
