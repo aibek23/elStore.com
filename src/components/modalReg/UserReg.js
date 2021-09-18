@@ -30,17 +30,17 @@ class UserReg extends React.Component {
                     <input type="text" placeholder="Укажите номер мобильного телефона" />
                     <div className={stalie.download__img}>
                         <input type="file" onChange={this.handleChange}/>
-                            <div class={stalie.fileLoad} stalie={{position:"absolute",zIndex:'-1'}}>
-                                <input type="text" value={this.state.fileload} placeholder="Загрузите фото магазина или бутика"/>
+                            <div className={stalie.fileLoad} stalie={{position:"absolute",zIndex:'-1'}}>
+                                <input type="text" defaultValue={this.state.fileload} placeholder="Загрузите фото магазина или бутика"/>
                                 <img src={download}alt=""/>
                             </div>
                     </div>
-                    {/* <div class="radioblock">
-                        <div class="radio">Красивый(ая)</div>
-                        <div class="radio">Умный(ая)</div>
-                        <div class="radio">Коммуникабульный(ая)</div>
-                        <div class="radio">Скромный(ая)</div>
-                        <div class="clear"></div>
+                    {/* <div className="radioblock">
+                        <div className="radio">Красивый(ая)</div>
+                        <div className="radio">Умный(ая)</div>
+                        <div className="radio">Коммуникабульный(ая)</div>
+                        <div className="radio">Скромный(ая)</div>
+                        <div className="clear"></div>
                         
                         <input type="hidden" id="radion" />
                     </div> */}
@@ -48,9 +48,9 @@ class UserReg extends React.Component {
                     <input type="text" placeholder="Привяжите свой магазин или бутик" style={{position:"relative",opacity:"1"}}/>
                     <span style={{position:"absolute",top:"30%",right:"5px",zIndex:"10"}}><img src={Up} alt="" /></span>
                     </div>
-                    <label class={stalie.checkbox}>
+                    <label className={stalie.checkbox}>
                         <input type="checkbox" />
-                        <span class={stalie.checkbox__icon}></span>
+                        <span className={stalie.checkbox__icon}></span>
                         <p style={{marginLeft:"5px"}}> Регистрируясь, вы принимаете Пользовательское<br/>соглашение и Конфиденциальность </p>
                     </label>
                     <button>Регистрация</button>

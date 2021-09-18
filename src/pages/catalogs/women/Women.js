@@ -85,7 +85,7 @@ class Women extends React.Component {
                     
                     <div className={style.contend}>
                     {/* <p style={{padding:"6px 25px",fontSize:'16px',fontWeight:"900",transform: "translateY(-10px)"}}><button style={{padding:"10px 30px",backgroundColor:"red",textTransform: "uppercase" ,color:"white",border:"none"}} onclick={this.handleClick()}>Назад</button> </p> */}
-                            <Products props={3} click={false} params={true}/>
+                            <Products params={"women"}/>
                     </div>
                     </div>
             </div>

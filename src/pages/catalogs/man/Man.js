@@ -78,7 +78,7 @@ class Man extends React.Component {
                     </ul>
                     
                     <div className={style.contend}>
-                            <Products props={3}/>
+                            <Products params={"man"}/>
                     </div>
                     </div>
             </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import stalie from './modalReg.module.css';
-import UserLogin from './UserLogin'
-import UserReg from './UserReg'
+import UserLogin from './UserLogin';
+import UserReg from './UserReg';
 class ModalReg extends React.Component {
     constructor(props) {
         super(props);
