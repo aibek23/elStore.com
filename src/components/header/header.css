@@ -1,5 +1,4 @@
 .header {
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -23,17 +22,18 @@
 }
 
 .header__nav {
-    padding-left: 40px;
+    margin-left: 80px;
 }
 
 .header__list {
+    margin-top: 35px;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 65px;
+    /* margin-bottom: 35px; */
 }
 
 .header_entrance {
-    margin-right: 0;
+    margin-right: 15px;
 }
 
 
@@ -43,7 +43,7 @@
     width: 77px;
     font-size: 16px;
     font-weight: 900;
-    font-family: "Franklin Gothic Demi Cond";
+
     background-color: #fff;
     border-radius: 15px;
 
@@ -53,8 +53,11 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;
+
     margin-right: 82px;
+    padding-bottom: 30px;
+    justify-content: flex-end;
+    align-items: center
 }
 
 .header__item:last-child {
@@ -64,6 +67,16 @@
 .header__item img {
     height: 32px;
     fill: black;
+}
+
+.header__item__img {
+    border-radius: 100%;
+    width: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: -32px;
 }
 
 
@@ -76,6 +89,8 @@
     text-transform: uppercase;
     color: black;
     text-decoration: none;
+    display: flex;
+    justify-content: center
 }
 
 
@@ -85,7 +100,7 @@
     position: absolute;
     z-index: 2;
     width: 250px;
-    transform: translateY(110px);
+    transform: translateY(350px);
     background-color: #fff;
     display: none;
 }
@@ -93,13 +108,20 @@
 
 .header__item:hover>.submenu {
     display: inline;
+
+}
+
+.header__link.active .header__item__img {
+    margin-top: -50px;
+    height: 52px;
+    background-color: blue;
 }
 
 .submenu::after {
     display: block;
     content: "";
     position: absolute;
-    top: -40px;
+    top: -41px;
     left: 50%;
     transform: translateX(-20px);
     border: 20px solid transparent;
@@ -168,6 +190,7 @@
 }
 
 .saerch {
+    margin-left: 80px;
     display: flex;
     flex-direction: row;
     position: relative;
@@ -213,7 +236,7 @@
     margin-right: 22px;
 }
 
-
+/* 
 
 .saerch__line::after,
 .saerch__line::before {
@@ -233,7 +256,7 @@
 
 .saerch__line::before {
     bottom: 0;
-}
+} */
 
 .search__input__wrrap {
     width: 100%;
@@ -249,6 +272,7 @@
 }
 
 .search__input__btn {
+    border: none;
     height: 40px;
     width: 40px;
     background-color: rgb(192, 192, 192);
@@ -275,6 +299,11 @@
 
 }
 
+/* Стили для контейнера */
+
+
+
+
 
 @media screen and (max-width: 960px) {
     .section-title {
@@ -294,7 +323,8 @@
     }
 
     .header__nav {
-        max-width: 100%;
+        margin-left: 0;
+        width: 100%;
         height: 100%;
         position: fixed;
         display: flex;
@@ -313,8 +343,17 @@
         transform: translateX(0);
     }
 
+    .header__nav_active body {
+        overflow-y: hidden
+    }
+
+    .header__list {
+        overflow: auto;
+    }
+
     .header__item {
-        flex-direction: row;
+        display: block;
+        flex: 1 100%;
         position: relative;
         width: 100%;
         margin-right: 0;
@@ -329,25 +368,31 @@
         margin-bottom: 0;
     }
 
-    .submenu {
-        border: 2px solid rgb(80, 128, 253);
-        border-radius: 5px;
-        width: 100%;
-        /* transform: translateY(110px); */
-        background-color: #fff;
-        opacity: 0;
-        transition: 2s;
-    }
-
-    .header__link:hover {
-        opacity: 1;
-
-    }
-
-
     .submenu::after {
         display: none;
     }
+
+    .submenu {
+        position: relative;
+        opacity: 0;
+        /* border: 2px solid rgb(80, 128, 253);
+        border-radius: 5px;
+        width: 100%;
+        /* transform: translateY(110px); 
+        background-color: #fff;
+        opacity: 0;
+        transition: 2s; */
+    }
+
+    .submenu__item a {
+        color: #fff
+    }
+
+
+    /* .header__link:hover {
+        opacity: 1;
+
+    } */
 
     .header__link {
         color: white;

@@ -1,0 +1,114 @@
+.conrainer {
+    display: grid;
+    /* grid-gap: 70px; */
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin-bottom: 80px;
+}
+
+.shop__card {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    height: 250px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.shop__card a {
+    text-decoration: none;
+}
+
+.card__img {
+    height: 100%;
+}
+
+.shop__card__title {
+    /* height: 44px; */
+    text-transform: uppercase;
+    padding-left: 20px;
+    line-height: 2.4;
+    font-size: 18px;
+    font-weight: 900;
+    background-color: red;
+    color: white;
+}
+
+.shop__card:hover .shop__card__title {
+    background-color: blue;
+}
+
+.pluse__btn {
+    padding-top: 60px;
+    margin: 60px 0 65px 0;
+    text-align: center;
+}
+
+/* {
+    font-size: 18px;
+    font-family: "Franklin Gothic Demi Cond";
+    color: rgb( 80, 128, 253 );
+    line-height: 2.667;
+    text-align: right;
+    position: absolute;
+    left: 412px;
+    top: 1405px;
+    width: 138px;
+    height: 15px;
+    z-index: 44;
+  } */
+.filter {}
+
+.filter__menu {
+    color: brown;
+    letter-spacing: 0.1em;
+}
+
+.filter__menu._active {
+    color: red;
+    height: 100%;
+}
+
+.filter__wrap {
+    margin-top: 35px;
+}
+
+.filter__wrap {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+@media screen and (max-width: 960px) {
+    .conrainer {
+        display: grid;
+        /* grid-gap: 70px; */
+        grid-template-columns: 1fr 1fr;
+        justify-items: center
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .conrainer {
+        display: grid;
+        grid-gap: 50px;
+        grid-template-columns: 1fr;
+        justify-items: center
+    }
+
+    .shop__card {
+        margin-top: 50px;
+
+        width: 100%;
+        height: 100%;
+
+        max-width: 300px;
+    }
+
+    .card__img {
+        width: 100%;
+        height: 100%;
+    }
+}

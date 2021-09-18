@@ -4,7 +4,9 @@ body {
     line-height: 1.2;
     font-weight: normal;
     color: #102746;
+    font-family: "Franklin Gothic Demi Cond";
 }
+
 
 img {
     max-width: 100%;
@@ -12,102 +14,26 @@ img {
 }
 
 .wrapper {
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
-.wrapper-full {
-    max-width: 1262px;
-    margin: 0 auto;
-    padding: 0 15px;
+.title {
+    text-align: center;
 }
 
-.section-title {
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 42px;
-    position: relative;
-    padding-bottom: 10px;
+.title__btn {
+    border: none;
+    background-color: white;
+    color: red;
+
 }
 
-.section-title::after {
-    display: block;
-    content: '';
-    width: 253px;
-    height: 3px;
-    background-color: #006DFE;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.title__btn.active {
+    color: blue;
 }
 
-@media screen and (max-width: 960px) {
-    .benefits {
-        margin-bottom: 75px;
-    }
 
-    .benefits__card {
-        margin-bottom: 60px;
-    }
 
-    .search-form__field {
-        margin-bottom: 25px;
-    }
-
-    .benefits__cards {
-        padding: 0 15px;
-        column-gap: 35px;
-    }
-
-    .benefits__title {
-        padding: 55px 15px;
-    }
-
-    .benefits__wrap {
-        box-shadow: none;
-    }
-
-    .places__card_size_lg {
-        grid-column: span 6;
-    }
-
-    .places__card_size_sm {
-        -ms-grid-column-span: 6;
-        grid-column: span 6;
-    }
-
-    .tours__tour {
-        column-gap: 35px;
-    }
-
-    .tour__info {
-        padding-left: 0;
-    }
-
-    .tour__title {
-        margin-bottom: 15px;
-    }
-
-    .tour__desc {
-        margin-bottom: 15px;
-    }
-
-    .top__cards {
-        column-gap: 25px;
-        row-gap: 55px;
-    }
-
-    .top__card {
-        -ms-grid-column-span: 3;
-        grid-column: span 3;
-    }
-
-    .top__card-pic {
-        margin-bottom: 25px;
-    }
-
-    .footer {
-        padding: 60px 0;
-    }
-}
+@media screen and (max-width: 960px) {}
