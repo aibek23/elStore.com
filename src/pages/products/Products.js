@@ -47,20 +47,24 @@ componentDidMount() {
 }
 componentDidUpdate(prevProps) {
     if(prevProps.limit !== this.state.limit) {
-        fetch(`http://localhost:3001/posts?_limit=${this.state.limit}`)
-        .then(response => {
-            if(response.ok){
-                return response.json();
-            } else {
-                alert('Произошла ошибка. Статус ошибки: '+response.status);
-            }
-        })
-        .then(data => this.setState({
-            products:data
-        }))
-    }
-  }
+    
 
+        fetch(`http://localhost:3001/posts?_limit=${this.state.limit}`)
+            .then(response => {
+                if(response.ok){
+                    return response.json();
+                } else {
+                    alert('Произошла ошибка. Статус ошибки: '+response.status);
+                }
+            })
+            .then(data => this.setState({
+                products:data
+            }))
+        
+
+
+  }
+}
     render() {
         return (
 <>
