@@ -60,7 +60,7 @@ class Children extends React.Component {
                         </li>
                     </ul>                    
                     <div className={style.contend}>
-                    {/* <p style={{padding:"6px 25px",fontSize:'16px',fontWeight:"900",transform: "translateY(-10px)"}}><button style={{padding:"10px 30px",backgroundColor:"red",textTransform: "uppercase" ,color:"white",border:"none"}} onclick={this.handleClick()}>Назад</button> </p> */}
+                    <p style={{padding:"6px 25px",fontSize:'16px',fontWeight:"900",transform: "translateY(-10px)"}}><button style={{padding:"10px 30px",backgroundColor:"red",textTransform: "uppercase" ,color:"white",border:"none"}} onclick={this.handleClick()}>Назад</button> </p> 
                             <Route exact path="/catalog/children/"><Products params={'children'}/></Route>
                             <Route exact path="/catalog/children/:id" render={(props) => (<ShopCard {...props} close={true}/>)}/>
                     </div>
